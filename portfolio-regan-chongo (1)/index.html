@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Regan Chongo — Desenvolvedor Web e Técnico de Suporte Informático, Maputo.">
+  <title>Regan Chongo — Desenvolvedor Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"></div>
+
+  <a class="skip" href="#main">Saltar para o conteúdo</a>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="top">
+    <a class="mark" href="#inicio" aria-label="Início">RC</a>
+
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+      <span></span><span></span>
+    </button>
+
+    <nav id="nav" class="nav" aria-label="Principal">
+      <a href="#inicio" data-en="Home">Início</a>
+      <a href="#sobre" data-en="About">Sobre</a>
+      <a href="#servicos" data-en="Services">Serviços</a>
+      <a href="#habilidades" data-en="Skills">Habilidades</a>
+      <a href="#percurso" data-en="Journey">Percurso</a>
+      <a href="#projetos" data-en="Projects">Projetos</a>
+      <a href="#contacto" data-en="Contact">Contacto</a>
+    </nav>
+
+    <div class="palettes" role="group" aria-label="Paleta de cores">
+      <button type="button" class="sw" data-pal="laboratorio" style="--c1:#ff5a2b;--c2:#14120e" aria-label="Paleta Laboratório" aria-pressed="true" title="Laboratório"></button>
+      <button type="button" class="sw" data-pal="oceano" style="--c1:#2bb3a3;--c2:#0a1c26" aria-label="Paleta Oceano" aria-pressed="false" title="Oceano"></button>
+      <button type="button" class="sw" data-pal="musgo" style="--c1:#e0a526;--c2:#141a13" aria-label="Paleta Musgo e Ocre" aria-pressed="false" title="Musgo e Ocre"></button>
+    </div>
+
+    <div class="lang" role="group" aria-label="Idioma">
+      <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== INÍCIO ===== -->
+    <section id="inicio" class="hero">
+      <div class="hero-meta">
+        <span data-en="Maputo, Mozambique">Maputo, Moçambique</span>
+        <span class="clock" aria-live="off"><span id="clock">--:--</span> <small data-en="local time">hora local</small></span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="l1">Regan</span>
+        <span class="l2">Chongo</span>
+      </h1>
+
+      <div class="hero-foot">
+        <p class="hero-role" data-en="Web Developer">Desenvolvedor Web</p>
+        <p class="hero-lead" data-en="IT support technician who builds. I turn ideas into working websites and software, from the cable on the desk to the code in the browser.">
+          Técnico de suporte informático que constrói. Transformo ideias em sites e software a funcionar, desde o cabo na secretária até ao código no navegador.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#projetos" data-en="See projects">Ver projetos</a>
+          <a class="btn btn-line" href="#contacto" data-en="Get in touch">Falar comigo</a>
+          <a class="btn btn-text" href="cv.pdf" download data-en="Download CV">Descarregar CV ↓</a>
+        </div>
+      </div>
+
+      <figure class="portrait">
+        <img src="img/foto.png" alt="Retrato de Regan Chongo">
+      </figure>
+    </section>
+
+    <!-- faixa de tecnologias -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Instalar sistemas operativos</span><span>suporte informatico</span><span>HTML</span><span>CSS</span><span></span><span>Vibe coding</span><span>Redes</span><span>Windows</span><span>javascript</span>
+        <span>Instalar sistemas operativos</span><span>Suporte informatico</span><span>HTML</span><span>CSS</span><span></span><span>Vibe coding</span><span>Redes</span><span>Windows</span><span>javascript</span>
+      </div>
+    </div>
+
+    <!-- ===== SOBRE MIM ===== -->
+    <section id="sobre" class="about">
+      <h2 class="label" data-en="About">Sobre mim</h2>
+
+      <p class="statement">
+        <span data-en="I'm 18, from Maputo, and I'm training to become a full-stack developer. I work in IT support and I'm into networks, security and new technology. I want to build projects that have real impact.">
+          Tenho 18 anos, sou de Maputo e estou a formar-me para me tornar desenvolvedor full-stack. Trabalho em suporte informático e interesso-me por redes, segurança e novas tecnologias. Quero construir projetos com impacto real.
+        </span>
+      </p>
+
+      <div class="term" aria-label="Apresentação em formato de terminal">
+        <div class="term-bar"><span></span><span></span><span></span></div>
+        <div class="term-body">
+          <p class="ln"><span class="ps">$</span> <span class="cmd" data-en="whoami" data-pt="whoami">whoami</span></p>
+          <p class="out" data-en="Regan Chongo · technical IT support and web developer" data-pt="Regan Chongo · técnico de suporte informático e desenvolvedor web">Regan Chongo · técnico de suporte informático e desenvolvedor web</p>
+          <p class="ln"><span class="ps">$</span> <span class="cmd" data-en="cat formacao.txt" data-pt="cat formacao.txt">cat formacao.txt</span></p>
+          <p class="out" data-en="Industrial electricity (level 3) · IT support (level 4), ITC" data-pt="Eletricidade industrial (nível 3) · Suporte informático (nível 4), ITC">Eletricidade industrial (nível 3) · Suporte informático (nível 4), ITC</p>
+          <p class="ln"><span class="ps">$</span> <span class="cmd" data-en="ls projetos/" data-pt="ls projetos/">ls projetos/</span></p>
+          <p class="out" data-en="mercearia-os/   linklab/   websites-microempresas/" data-pt="mercearia-os/   linklab/   websites-microempresas/">mercearia-os/   linklab/   </p>
+          <p class="ln"><span class="ps">$</span> <span class="cmd cursor-blink" data-en="echo $GOAL" data-pt="echo $OBJETIVO">echo $OBJETIVO</span></p>
+          <p class="out" data-en="full-stack developer · projects with impact · financial freedom" data-pt="desenvolvedor full-stack · projetos com impacto · liberdade financeira">desenvolvedor full-stack · projetos com impacto · liberdade financeira</p>
+        </div>
+      </div>
+
+      <dl class="facts">
+        <div>
+          <dt data-en="Training">Formação</dt>
+          <dd data-en="IT Support Technician, level 4 · Industrial Electricity, level 3 · Instituto de Transportes e Comunicações">Técnico de Suporte Informático, nível 4 · Eletricidade Industrial, nível 3 · Instituto de Transportes e Comunicações</dd>
+        </div>
+        <div>
+          <dt data-en="Languages">Idiomas</dt>
+          <dd data-en="Portuguese and English, both fluent in writing and speech.">Português e inglês, fluentes na escrita e na fala.</dd>
+        </div>
+        <div>
+          <dt data-en="Goal">Objetivo</dt>
+          <dd data-en="Become a full-stack developer, build useful solutions for people and companies, and win financial freedom.">Tornar-me desenvolvedor full-stack, criar soluções úteis para pessoas e empresas e conquistar liberdade financeira.</dd>
+        </div>
+      </dl>
+
+      <blockquote class="motto" data-en="Discipline today, freedom tomorrow.">"Disciplina hoje, liberdade amanhã."</blockquote>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section id="servicos" class="services-sec">
+      <header class="sec-head">
+        <h2 class="title" data-en="Services">Serviços</h2>
+        <p class="note" data-en="What I can build and support for you.">O que posso construir e apoiar para si.</p>
+      </header>
+
+      <div class="service-grid">
+        <article class="service">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+          <h3 data-en="Websites">Criação de websites</h3>
+          <p data-en="Institutional sites and pages for small businesses: fast, responsive and easy to update.">Sites institucionais e páginas para micro-empresas: rápidos, responsivos e fáceis de atualizar.</p>
+        </article>
+        <article class="service">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></span>
+          <h3 data-en="Automation and digital presence">Automação e presença digital</h3>
+          <p data-en="Organising processes, lead-capture pages and digital presence for small and medium businesses.">Organização de processos, páginas de captação de clientes e presença digital para PME.</p>
+        </article>
+        <article class="service">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>
+          <h3 data-en="IT support and networks">Suporte e redes</h3>
+          <p data-en="Hardware and software maintenance, network setup and day-to-day user support.">Manutenção de hardware e software, configuração de redes e suporte ao utilizador.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section id="habilidades" class="skills">
+      <header class="sec-head">
+        <h2 class="label" data-en="Skills">Habilidades</h2>
+        <p class="sec-note" data-en="Select a skill to read more.">Escolha uma habilidade para ler mais.</p>
+      </header>
+
+      <ul class="skill-list">
+        <li class="skill">
+          <button class="skill-row" aria-expanded="false">
+            <img src="img/suporte.png" alt="">
+            <span class="skill-name" data-en="Computer support">Suporte informático</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div class="skill-body"><p data-en="Maintenance, configuration and troubleshooting of hardware and software.">Manutenção, configuração e resolução de problemas de hardware e software.</p></div>
+        </li>
+        <li class="skill">
+          <button class="skill-row" aria-expanded="false">
+            <img src="img/redes.png" alt="">
+            <span class="skill-name" data-en="Computer networks">Redes de computadores</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div class="skill-body"><p data-en="Configuration, connectivity and network diagnostics.">Configuração, conectividade e diagnóstico de problemas de rede.</p></div>
+        </li>
+        <li class="skill">
+          <button class="skill-row" aria-expanded="false">
+            <img src="img/sistemas.png" alt="">
+            <span class="skill-name" data-en="Operating systems">Sistemas operativos</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div class="skill-body"><p data-en="Installation and configuration, Windows and others.">Instalação e configuração, Windows e outros.</p></div>
+        </li>
+        <li class="skill">
+          <button class="skill-row" aria-expanded="false">
+            <img src="img/web.png" alt="">
+            <span class="skill-name" data-en="Web development">Desenvolvimento web</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div class="skill-body"><p data-en="HTML, CSS and JavaScript, plus React and TypeScript in projects. Basics of backend.">HTML, CSS e JavaScript, com React e TypeScript nos projetos. Noções básicas de backend.</p></div>
+        </li>
+        <li class="skill">
+          <button class="skill-row" aria-expanded="false">
+            <img src="img/web.png" alt="">
+            <span class="skill-name" data-en="Vibe coding">Vibe coding</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div class="skill-body"><p data-en="Building apps and websites by describing the idea in plain language and iterating fast with AI tools.">Criação de aplicações e sites descrevendo a ideia em linguagem natural e iterando rapidamente com ferramentas de IA.</p></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="projects">
+      <header class="sec-head">
+        <h2 class="label" data-en="Projects">Projetos</h2>
+        <p class="sec-note" data-en="Hover to preview, select to open.">Passe o rato para ver, clique para abrir.</p>
+      </header>
+
+      <ul class="project-list">
+        <li>
+          <button class="project" data-img="img/mercearia.png"
+                  data-title="Mercearia OS"
+                  data-pt="Sistema de gestão de mercearia: vendas, produtos, stock, despesas, fechos de caixa e relatórios num só painel."
+                  data-en-desc="Grocery store management system: sales, products, stock, expenses, cash closings and reports in one dashboard."
+                  data-stack="React · TypeScript"
+                  data-link="https://merceariaos.ai.studio">
+            <span class="project-title">Mercearia OS</span>
+            <span class="project-desc" data-en="Grocery store management system.">Sistema de gestão de mercearia.</span>
+            <span class="project-stack">React · TypeScript</span>
+            <img class="thumb" src="img/mercearia.png" alt="">
+          </button>
+        </li>
+        <li>
+          <button class="project" data-img="img/linklab.png"
+                  data-title="LinkLab"
+                  data-pt="Plataforma que conecta estudantes e empresas, transformando conhecimento e projetos em oportunidades reais."
+                  data-en-desc="Platform that connects students and companies, turning knowledge and projects into real opportunities."
+                  data-stack="Plataforma de talentos"
+                  data-link="https://linklab.ai.studio">
+            <span class="project-title">LinkLab</span>
+            <span class="project-desc" data-en="Platform connecting students and companies.">Plataforma que conecta estudantes e empresas.</span>
+            <span class="project-stack">Plataforma de talentos</span>
+            <img class="thumb" src="img/linklab.png" alt="">
+          </button>
+        </li>
+      </ul>
+
+      <!-- pré-visualização que segue o cursor (desktop) -->
+      <div class="cursor-preview" aria-hidden="true"><img alt=""></div>
+    </section>
+
+    <!-- ===== PERCURSO ===== -->
+    <section id="percurso" class="journey">
+      <header class="sec-head">
+        <h2 class="title" data-en="Journey">Percurso</h2>
+        <p class="note" data-en="Training, projects and what comes next.">Formação, projetos e o que vem a seguir.</p>
+      </header>
+
+      <ol class="timeline">
+        <li>
+          <span class="node" aria-hidden="true"></span>
+          <p class="t-kind" data-en="Training">Formação</p>
+          <h3 data-en="Industrial electricity, level 3">Eletricidade industrial, nível 3</h3>
+          <p data-en="Instituto de Transportes e Comunicações (ITC), 2025.">Instituto de Transportes e Comunicações (ITC), 2025.</p>
+        </li>
+        <li>
+          <span class="node" aria-hidden="true"></span>
+          <p class="t-kind" data-en="Training">Formação</p>
+          <h3 data-en="IT support technician, level 4">Técnico de suporte informático, nível 4</h3>
+          <p data-en="Instituto de Transportes e Comunicações (ITC), 2026.">Instituto de Transportes e Comunicações (ITC), 2026.</p>
+        </li>
+        <li>
+          <span class="node" aria-hidden="true"></span>
+          <p class="t-kind" data-en="Projects">Projetos</p>
+          <h3 data-en="Websites for small businesses">Websites para micro-empresas</h3>
+          <p data-en="Design and development of sites for small businesses.">Desenvolvimento e design de sites para micro-empresas.</p>
+        </li>
+        <li>
+          <span class="node" aria-hidden="true"></span>
+          <p class="t-kind" data-en="Projects">Projetos</p>
+          <h3 data-en="Internal control system, Matimba Energy">Sistema web de controlo interno, Matimba Energy</h3>
+          <p data-en="Design and planning of a web-based internal control system.">Design e planeamento de um sistema web de controlo interno.</p>
+        </li>
+        <li>
+          <span class="node" aria-hidden="true"></span>
+          <p class="t-kind" data-en="Current">Atual</p>
+          <h3>Nexora Agency</h3>
+          <p data-en="CEO and developer of a digital agency serving SMEs.">CEO e desenvolvedor de uma agência digital para PME.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== COMPETÊNCIAS ===== -->
+    <section id="competencias" class="skills-soft">
+      <header class="sec-head">
+        <h2 class="title" data-en="Competences">Competências</h2>
+        <p class="note" data-en="Languages and the way I work.">Idiomas e a forma como trabalho.</p>
+      </header>
+
+      <div class="comp-grid">
+        <div class="comp-block">
+          <h3 class="comp-h" data-en="Languages">Idiomas</h3>
+          <ul class="chip-group">
+            <li data-en="Portuguese · fluent, written and spoken">Português · fluente, escrito e falado</li>
+            <li data-en="English · fluent, written and spoken">Inglês · fluente, escrito e falado</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <h3 class="comp-h" data-en="Way of working">Forma de trabalhar</h3>
+          <ul class="chip-group">
+            <li data-en="Leadership">Liderança</li>
+            <li data-en="Working under pressure">Trabalho sob pressão</li>
+            <li data-en="Problem solving">Resolução de problemas</li>
+            <li data-en="Learning new things">Aprendizagem contínua</li>
+          </ul>
+        </div>
+        <div class="comp-block">
+          <h3 class="comp-h" data-en="Technical basics">Bases técnicas</h3>
+          <ul class="chip-group">
+            <li>JavaScript</li>
+            <li data-en="Hardware maintenance">Manutenção de hardware</li>
+            <li data-en="Backend basics">Noções de backend</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="contact">
+      <div class="contact-intro">
+        <h2 class="contact-title">
+          <span data-en="Let's work">Vamos trabalhar</span><br>
+          <span data-en="together?">juntos?</span>
+        </h2>
+        <p class="contact-lead" data-en="Projects, jobs, partnerships or just a technology conversation. Write here and I reply within 24 hours.">Projetos, emprego, parcerias ou só uma conversa sobre tecnologia. Escreva aqui e respondo em até 24 horas.</p>
+
+        <ul class="direct">
+          <li><span data-en="Email">Email</span><a href="mailto:reganchongo115@gmail.com">reganchongo115@gmail.com</a></li>
+          <li><span data-en="Phone">Telefone</span><a href="tel:+258841687383">+258 84 168 7383</a></li>
+          <li><span>WhatsApp</span><a href="https://wa.me/258841687383" target="_blank" rel="noopener">+258 84 168 7383</a></li>
+        </ul>
+
+        <div class="socials">
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><img src="img/instagram.jpg" alt=""></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="img/whatsapp.png" alt=""></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="YouTube"><img src="img/youtube.png" alt=""></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="GitHub"><img src="img/github.png" alt=""></a>
+        </div>
+      </div>
+
+      <form class="form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="f-nome" data-en="Name">Nome</label>
+          <input id="f-nome" name="nome" type="text" autocomplete="name" required
+                 data-ph-pt="O seu nome" data-ph-en="Your name">
+          <small class="err" data-for="f-nome"></small>
+        </div>
+
+        <div class="field">
+          <label for="f-email" data-en="Email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required
+                 data-ph-pt="nome@exemplo.com" data-ph-en="name@example.com">
+          <small class="err" data-for="f-email"></small>
+        </div>
+
+        <div class="field">
+          <label for="f-assunto" data-en="Subject">Assunto</label>
+          <select id="f-assunto" name="assunto" required>
+            <option value="" data-en="Choose one">Escolha uma opção</option>
+            <option value="Projeto" data-en="Project">Projeto</option>
+            <option value="Emprego" data-en="Job opportunity">Oportunidade de emprego</option>
+            <option value="Parceria" data-en="Partnership">Parceria</option>
+            <option value="Outro" data-en="Other">Outro</option>
+          </select>
+          <small class="err" data-for="f-assunto"></small>
+        </div>
+
+        <div class="field">
+          <label for="f-msg" data-en="Message">Mensagem</label>
+          <textarea id="f-msg" name="mensagem" rows="5" maxlength="800" required
+                    data-ph-pt="Conte-me sobre o projeto ou a oportunidade." data-ph-en="Tell me about the project or opportunity."></textarea>
+          <div class="field-foot">
+            <small class="err" data-for="f-msg"></small>
+            <small class="count"><span id="count">0</span>/800</small>
+          </div>
+        </div>
+
+        <button class="btn btn-solid submit" type="submit">
+          <span data-en="Send message">Enviar mensagem</span> →
+        </button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <p class="fine" data-en="Opens your email app with the message ready. Nothing is stored on this site.">Abre a sua aplicação de email com a mensagem pronta. Nada é guardado neste site.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="year"></span> Regan Chongo</p>
+    <a href="#inicio" data-en="Back to top">Voltar ao topo ↑</a>
+  </footer>
+
+  <!-- janela de detalhe do projeto -->
+  <dialog id="dlg" class="dlg" aria-labelledby="dlg-title">
+    <button class="dlg-close" aria-label="Fechar">×</button>
+    <img id="dlg-img" alt="">
+    <div class="dlg-body">
+      <h3 id="dlg-title"></h3>
+      <p id="dlg-desc"></p>
+      <p class="dlg-stack" id="dlg-stack"></p>
+      <a id="dlg-link" class="btn btn-solid" href="#" target="_blank" rel="noopener" data-en="Open project">Abrir projeto ↗</a>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+  <script src="extras.js"></script>
+</body>
+</html>
